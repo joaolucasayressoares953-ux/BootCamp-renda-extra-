@@ -15,6 +15,25 @@ function redirecionaFinal() {
   redireciona('0oY9To4');
 }
 
+function animarNumero(element, valorFinal, prefix = '', suffix = '', duracao = 1600) {
+  if (!element) return;
+  const inicio = performance.now();
+  const valorInicial = 0;
+
+  const passo = (agora) => {
+    const progresso = Math.min(1, (agora - inicio) / duracao);
+    const suavizado = 1 - Math.pow(1 - progresso, 3);
+    const valorAtual = Math.round(valorInicial + (valorFinal - valorInicial) * suavizado);
+    element.textContent = `${prefix}${valorAtual.toLocaleString('pt-BR')}${suffix}`;
+
+    if (progresso < 1) {
+      requestAnimationFrame(passo);
+    }
+  };
+
+  requestAnimationFrame(passo);
+}
+
 function atualizarEstoque() {
   const estoqueInicial = 48;
   let estoqueAtual = estoqueInicial;
@@ -63,7 +82,28 @@ function inicializarCarrossel() {
   mostrar(index);
 }
 
+function inicializarRevelar() {
+  const elementos = document.querySelectorAll('.reveal');
+  if (!elementos.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elementos.forEach((elemento) => observer.observe(elemento));
+}
+
 window.addEventListener('DOMContentLoaded', () => {
+  const faturamento = document.getElementById('grafico-faturamento');
+  if (faturamento) {
+    animarNumero(faturamento, 3406000, '', '', 1800);
+  }
+
   atualizarEstoque();
   inicializarCarrossel();
+  inicializarRevelar();
 });

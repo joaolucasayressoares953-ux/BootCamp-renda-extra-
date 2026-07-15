@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <video autoplay muted loop playsinline id="bg-video">
         <source src="assets/bg.mp4" type="video/mp4" />
       </video>
@@ -22,39 +22,114 @@
         </a>
         <ul class="nav-links">
           <li><a href="#planos">Planos</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#duvidas">Dúvidas</a></li>
         </ul>
         <button class="comprar-btn" onclick="redireciona('0oY9To4')">Garantir vaga</button>
       </nav>
 
-      <div class="hero" id="top">
-        <div class="hero-text">
-          <h1>OUÇA SÓ UMA VEZ E VOCÊ NUNCA MAIS SERÁ O MESMO</h1>
+      <div class="hero">
+        <div class="hero-text reveal">
+          <div class="badge">NOVO CICLO 2026 • VAGAS LIMITADAS</div>
+          <h1>Aprenda a gerar renda com IA e transforme sua rotina em resultado real</h1>
           <p>
-            Mais de <strong>183 alunos ingressantes</strong> por mês.<br />
-            R$ <span id="grafico-faturamento">3.406.000</span> já faturados no último mês.
+            Mais de <strong>183 alunos ingressantes</strong> por mês e
+            <strong>R$ <span id="grafico-faturamento">3.406.000</span></strong>
+            já faturados no último mês com automações, chatbots e estratégias práticas.
           </p>
           <div class="highlight">
             <span>APENAS</span>
             <span id="estoque-limitado">48 vagas restantes</span>
           </div>
-          <button id="comprar-principal" class="cta-primary" onclick="redireciona('0oY9To4')">
-            EU QUERO MINHA VAGA AGORA
-          </button>
-          <div class="seguro">✓ 7 dias de garantia incondicional</div>
+          <div class="hero-actions">
+            <button id="comprar-principal" class="cta-primary" onclick="redireciona('0oY9To4')">
+              EU QUERO MINHA VAGA AGORA
+            </button>
+            <button class="cta-secondary" onclick="redireciona('K9rM9rC')">Ver plano premium</button>
+          </div>
+          <div class="seguro">✓ 7 dias de garantia incondicional • ✓ Acesso imediato • ✓ Suporte ativo</div>
         </div>
 
-        <div class="social-proof">
-          <img src="assets/avatar1.svg" alt="Ana, 34" />
-          <img src="assets/avatar2.svg" alt="João, 28" />
-          <img src="assets/avatar3.svg" alt="Maria, 41" />
-          <div class="counter">Mais de <strong>5.280 alunos</strong> transformaram suas vidas</div>
+        <div class="hero-visual reveal">
+          <img src="assets/hero-illustration.svg" alt="Ilustração do curso com IA" />
+          <div class="hero-card">
+            <div class="hero-card-title">Resultado em poucos dias</div>
+            <div class="hero-card-value">+R$ 5.000/mês</div>
+            <div class="hero-card-sub">com automações de vendas e atendimento</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-strip reveal">
+        <div class="stat">
+          <strong>5.280+</strong>
+          <span>alunos transformados</span>
+        </div>
+        <div class="stat">
+          <strong>96%</strong>
+          <span>da turma recomenda</span>
+        </div>
+        <div class="stat">
+          <strong>1:1</strong>
+          <span>mentoria em planos avançados</span>
         </div>
       </div>
     </header>
 
     <main>
+      <section id="beneficios" class="benefits">
+        <div class="section-title reveal">
+          <h2>O que você ganha ao entrar</h2>
+          <p>Estratégias simples, aplicáveis e pensadas para você começar a vender e faturar com IA.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <img src="assets/icon1.svg" alt="Ícone de automação" />
+            <h3>Automação de vendas</h3>
+            <p>Aprenda a criar chatbots e fluxos que ajudam a captar clientes e vender com menos esforço.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <img src="assets/icon2.svg" alt="Ícone de estratégia" />
+            <h3>Estratégias práticas</h3>
+            <p>Você recebe modelos, templates e roteiro que podem ser usados imediatamente em negócios reais.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <img src="assets/icon3.svg" alt="Ícone de suporte" />
+            <h3>Suporte e acompanhamento</h3>
+            <p>Tenha acesso a comunidade, suporte e mentoria para evitar travar no caminho.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <img src="assets/icon4.svg" alt="Ícone de resultado" />
+            <h3>Mais liberdade financeira</h3>
+            <p>O objetivo é simples: te colocar em posição de gerar renda suplementar ou principal com IA.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="processo">
+        <div class="section-title reveal">
+          <h2>Como funciona o caminho</h2>
+          <p>Você não precisa saber tudo antes. O conteúdo foi montado para te levar do zero ao resultado.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step reveal">
+            <span>01</span>
+            <h3>Entenda o básico</h3>
+            <p>Você aprende os fundamentos, conceitos e ferramentas que geram valor real.</p>
+          </div>
+          <div class="step reveal">
+            <span>02</span>
+            <h3>Construa seus projetos</h3>
+            <p>Os módulos mostram como criar automações e soluções que podem ser vendidas ou aplicadas.</p>
+          </div>
+          <div class="step reveal">
+            <span>03</span>
+            <h3>Monetize seu conhecimento</h3>
+            <p>Chega a hora de colocar tudo em prática e transformar sua nova habilidade em renda.</p>
+          </div>
+        </div>
+      </section>
+
       <section id="planos" class="planos">
         <h2>Escolha seu plano e comece HOJE</h2>
         <p class="subtitle">Todos os planos incluem:</p>
@@ -67,7 +142,7 @@
         </ul>
 
         <div class="planos-grid">
-          <div class="plano">
+          <div class="plano reveal">
             <h3>ACESSO IMEDIATO</h3>
             <div class="preço">
               <strong>R$ 497,00</strong>
@@ -82,7 +157,7 @@
             <button class="plano-btn comprar" onclick="redireciona('8RPoicE')">QUERO IMEDIATO</button>
           </div>
 
-          <div class="plano popular">
+          <div class="plano popular reveal">
             <div class="destaque">Mais Vendido</div>
             <h3>AVANÇADO</h3>
             <div class="preço">
@@ -99,7 +174,7 @@
             <button class="plano-btn comprar" onclick="redireciona('0oY9To4')">ADQUIRIR A VAGA</button>
           </div>
 
-          <div class="plano">
+          <div class="plano reveal">
             <h3>PREMIUM</h3>
             <div class="preço">
               <strong>R$ 4.997,00</strong>
@@ -115,7 +190,7 @@
             <button class="plano-btn comprar" onclick="redireciona('K9rM9rC')">QUERO PREMIUM</button>
           </div>
 
-          <div class="plano master">
+          <div class="plano master reveal">
             <div class="destaque">VIP</div>
             <h3>MASTER</h3>
             <div class="preço">
@@ -136,12 +211,12 @@
 
       <section id="depoimentos" class="depoimentos">
         <h2>O que <strong>REALMENTE</strong> os alunos dizem</h2>
-        <div class="slides">
+        <div class="slides reveal">
           <div class="slide active">
             <div class="depoimento">
               <img src="assets/avatar1.svg" alt="Paulo César, 32" />
               <div class="texto">
-                <strong>"Consigo faturar mais em 3 dias do que meu salário antigo em 3 meses!"</strong>
+                <strong>“Consigo faturar mais em 3 dias do que meu salário antigo em 3 meses!”</strong>
                 <p>Antes tinha um emprego que pagava R$1.900. Agora, só com automação, meu rendimento é de R$6.200.</p>
               </div>
               <span class="estrela">★★★★★</span>
@@ -152,7 +227,7 @@
             <div class="depoimento">
               <img src="assets/avatar2.svg" alt="Carolina Oliveira, 26" />
               <div class="texto">
-                <strong>"Em 15 dias já tinha recuperado todo o investimento."</strong>
+                <strong>“Em 15 dias já tinha recuperado todo o investimento.”</strong>
                 <p>Usei as técnicas do curso para criar um chatbot de vendas para uma loja de roupas. Em duas semanas, as vendas aumentaram 220%.</p>
               </div>
               <span class="estrela">★★★★★</span>
@@ -163,7 +238,7 @@
             <div class="depoimento">
               <img src="assets/avatar3.svg" alt="Rafael Lima, 39" />
               <div class="texto">
-                <strong>"Finalmente entendi como a IA pode ser minha aliada e não um bicho de sete cabeças!"</strong>
+                <strong>“Finalmente entendi como a IA pode ser minha aliada e não um bicho de sete cabeças!”</strong>
                 <p>Sempre achei que IA era coisa de programador. As aulas são tão fáceis que consegui criar meu primeiro bot em 3 horas.</p>
               </div>
               <span class="estrela">★★★★★</span>
@@ -178,19 +253,19 @@
       <section id="duvidas" class="duvidas">
         <h2>Dúvidas Frequentes</h2>
         <div class="faq">
-          <div class="pergunta">
+          <div class="pergunta reveal">
             <span>Preciso saber programação para fazer o curso?</span>
             <p class="resposta">Não! 60% dos nossos alunos chegaram sem saber programar e hoje faturam de R$4.500 a R$15.000/mês.</p>
           </div>
-          <div class="pergunta">
+          <div class="pergunta reveal">
             <span>Como funciona o pagamento e a entrega do curso?</span>
             <p class="resposta">Ao clicar em comprar, você é redirecionado para o pagamento seguro do Kiwify. Após confirmação, recebe o acesso imediato no e-mail cadastrado.</p>
           </div>
-          <div class="pergunta">
+          <div class="pergunta reveal">
             <span>E se não gostar do curso?</span>
             <p class="resposta">Você tem 7 dias de garantia incondicional. Se não gostar, é só nos enviar um e-mail e devolvemos 100% do valor pago.</p>
           </div>
-          <div class="pergunta">
+          <div class="pergunta reveal">
             <span>O curso vale a pena?</span>
             <p class="resposta">Se você quer aumentar sua renda e ter liberdade financeira, vale TUDO. Nossa garantia de faturamento prova que é real.</p>
           </div>
@@ -199,7 +274,7 @@
     </main>
 
     <footer>
-      <div class="footer-top">
+      <div class="footer-top reveal">
         <h2>ADQUIRA AGORA MESMO COM CONDIÇÃO ESPECIAL</h2>
         <div class="planos-footer">
           <div class="plano">
@@ -227,9 +302,9 @@
         <button class="comprar-footer" onclick="redireciona('0oY9To4')">Garantir minha vaga agora</button>
       </div>
 
-      <div class="footer-cta">
+      <div class="footer-cta reveal">
         <h3>PERGUNTA DO PROFESSOR PARA VOCÊ:</h3>
-        <p>"Se eu te mostrar como ganhar R$5.000/mês com IA, você começaria HOJE?"</p>
+        <p>“Se eu te mostrar como ganhar R$5.000/mês com IA, você começaria HOJE?”</p>
         <button id="final-button" onclick="redireciona('0oY9To4')">COMEÇAR AGORA</button>
         <div class="seguro-footer">🔒 100% seguro • Aceitamos Pix, cartão, boleto, transferência</div>
       </div>
